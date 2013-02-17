@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D39DE2916D057A40018F8CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D39DE2816D057A40018F8CA /* Foundation.framework */; };
-		3D39DE2C16D057A40018F8CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D39DE2B16D057A40018F8CA /* main.m */; };
+		3D39DE2C16D057A40018F8CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D39DE2B16D057A40018F8CA /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3D39DE3016D057A40018F8CA /* Chapter1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D39DE2F16D057A40018F8CA /* Chapter1.1 */; };
 /* End PBXBuildFile section */
 
@@ -242,6 +242,7 @@
 				3D39DE3516D057A40018F8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
