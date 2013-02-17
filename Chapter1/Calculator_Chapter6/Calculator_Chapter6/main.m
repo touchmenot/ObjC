@@ -3,7 +3,6 @@
 //  Calculator_Chapter6
 //
 	
-
 #import <Foundation/Foundation.h>
 
 @interface Calculator: NSObject
@@ -39,7 +38,7 @@
 }
 
 -(void) sub:(double) value{
-    acc = acc - (value);
+    acc = acc - (value);//This will take care of the minus sign in the second value.	
 }
 
 -(void) mul:(double) value{
@@ -56,7 +55,6 @@ int main(int argc, const char * argv[])
 {
     char operator;
     double a,b;
-    int flag;
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     Calculator *myCalc = [[Calculator alloc] init];
     
@@ -75,8 +73,6 @@ int main(int argc, const char * argv[])
     }
     NSLog(@"Enter the numbers");
     scanf("%lf %lf",&a,&b);
-    if(b == 0)
-        flag = 1;
     [myCalc setAcc:a];
     switch (operator) {
         case '+':
@@ -86,7 +82,7 @@ int main(int argc, const char * argv[])
             [myCalc sub:b];
             break;
         case '/':
-            if(flag){
+            if(b == 0){
                 NSLog(@"Divide by zero error");
                 exit(1);
             }

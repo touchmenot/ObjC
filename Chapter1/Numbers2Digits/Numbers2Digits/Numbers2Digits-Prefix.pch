@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Numbers2Digits' target in the 'Numbers2Digits' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
