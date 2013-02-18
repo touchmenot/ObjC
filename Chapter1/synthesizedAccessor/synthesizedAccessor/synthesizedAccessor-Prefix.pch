@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'synthesizedAccessor' target in the 'synthesizedAccessor' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
